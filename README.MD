@@ -16,8 +16,8 @@ dfx ledger --network ic balance
 ```bash
 dfx ledger account-id 
 ```
-- Send 1 ICP to that account (NFID/Plug/Stoic or any wallet)- wait 2 sec for transaction to be completed.
-- Show that the balance has been updated. 
+- Send 1 ICP to that account (From NFID/Plug/Stoic or any other wallet) - wait 2 sec for the transaction to be completed.
+- Verify that the balance has been updated. 
 ```bash
 dfx ledger --network ic balance
 ```
@@ -35,9 +35,9 @@ dfx canister --network ic create webpage --with-cycles 1000000000000
 ```
 - Build the wasm for the webpage.
 ```bash
-dfx build --network ic 
+dfx build --network ic webpage
 ```
 - Deploy the module inside the canister.
 ```bash
-dfx deploy --network ic
+dfx deploy --network ic webpage
 ```
